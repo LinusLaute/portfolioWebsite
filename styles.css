@@ -104,23 +104,18 @@
         }
 
         /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding: 8rem 3rem 4rem;
-            position: relative;
-        }
-
         .hero-bg {
-            position: absolute;
+            /* make the glow span the viewport edge to avoid cutoff at the hero margin */
+            position: fixed;
             top: 0;
             right: 0;
-            width: 60%;
-            height: 100%;
+            width: 60vw;
+            height: 100vh;
             background: radial-gradient(ellipse at 70% 30%, var(--accent-glow) 0%, transparent 50%);
             pointer-events: none;
+            z-index: 0;
         }
+
 
         .hero-content {
             max-width: 1400px;
@@ -130,6 +125,8 @@
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
+            position: relative;
+            z-index: 1;
         }
 
         .hero-text {
