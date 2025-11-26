@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linus Lautenschlager | About Me</title>
+    <title>Linus Lautenschlager | Portfolio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="256x256">
+    <!-- PNG fallback for older browsers (optional): use /favicon.png if you add one -->
+    <!-- <link rel="icon" href="/favicon.png" type="image/png"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">   
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W55LRXL35M"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W55LRXL35M');
+    </script>
 </head>
 <body>
     <nav>
-        <div class="logo">LL</div>
+        <div class="logo">
+            <img src="favicon.svg" alt="LL logo" class="logo-img">
+            <span class="sr-only">Linus Lautenschlager</span>
+        </div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -97,10 +113,10 @@
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-date">Jun 2025 – Oct 2025</div>
-                <h3 class="timeline-title">Signal & IT Specialist</h3>
+                <h3 class="timeline-title">Signal Soldier</h3>
                 <div class="timeline-company">Swiss Army</div>
                 <ul class="timeline-description">
-                    <li>Military service in signal and IT operations</li>
+                    <li>Military service in signal and communication operations</li>
                 </ul>
             </div>
             <div class="timeline-item">
@@ -123,7 +139,7 @@
                     <li>Coordinated a team of up to five assistant teachers</li>
                 </ul>
             </div>
-            <div class="timeline-item">
+            <!-- <div class="timeline-item">
                 <div class="timeline-date">2024 – Present</div>
                 <h3 class="timeline-title">Founder</h3>
                 <div class="timeline-company">Luti Capital</div>
@@ -132,7 +148,7 @@
                     <li>Developing data-driven tools for market analysis and automation</li>
                     <li>Developed and expanded arbitrage algorithm since 2022</li>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -229,27 +245,14 @@
             <h2 class="section-title">Featured Work</h2>
         </div>
         <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-type">Venture · Since 2019</div>
-                    <h3 class="project-title">Luti Capital</h3>
-                    <p class="project-description">An alternative investment platform focused on gaming cosmetics markets. Built to provide access to CS:GO item investments with data-driven strategies. What started during the pandemic as market exploration has grown into a functioning wealth management operation.</p>
-                </div>
-                <div class="project-tech">
-                    <span class="skill-tag">Next.js</span>
-                    <span class="skill-tag">Market Analysis</span>
-                    <span class="skill-tag">Alternative Assets</span>
-                </div>
-                <a href="https://luticapital.com" target="_blank" rel="noopener" class="project-link">
-                    Visit Website
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                </a>
-            </div>
+            
             <div class="project-card">
                 <div class="project-header">
                     <div class="project-type">Trading · Automation</div>
                     <h3 class="project-title">Arbitrage Bot</h3>
-                    <p class="project-description">A Python-based system designed to identify and exploit price inefficiencies between European and Asian digital marketplaces. Features real-time data processing, automated execution, risk management protocols, and profitability tracking.</p>
+                    <p class="project-description">A Python-based system that detects and capitalizes on price differences between European and Asian digital skin markets. 
+                        It automates the full process of identifying opportunities, executing purchases, and managing resale and performance tracking.
+                    </p>
                 </div>
                 <div class="project-tech">
                     <span class="skill-tag">Python</span>
@@ -266,7 +269,9 @@
                 <div class="project-header">
                     <div class="project-type">University · Team Project</div>
                     <h3 class="project-title">Poker Web Application</h3>
-                    <p class="project-description">Full-stack multiplayer poker platform built as a university group project with a team of five. Developed backend game logic and API in Java, with a React frontend for real-time gameplay. Deployed on Google Cloud infrastructure.</p>
+                    <p class="project-description">Full-stack multiplayer poker platform built as a university group project with a team of five. 
+                        Developed backend game logic and API in Java, with a React frontend for real-time gameplay. Deployed on Google Cloud infrastructure.
+                    </p>
                 </div>
                 <div class="project-tech">
                     <span class="skill-tag">Java</span>
@@ -276,6 +281,28 @@
                 </div>
                 <a href="https://github.com/LinusLaute" target="_blank" rel="noopener" class="project-link">
                     View on GitHub
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Side Project · Since 2019</div>
+                    <h3 class="project-title">Luti Capital</h3>
+                    <p class="project-description">Luti Capital is a personal project focused on identifying and profiting from pricing inefficiencies in alternative digital asset markets. 
+                        The main area is gaming cosmetics, especially Counter-Strike items, supported by manual analysis and an automated arbitrage bot I’ve been developing since 2022.
+                        
+                    </p>
+                </div>
+                <div class="project-tech">
+                    <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">Market Analysis</span>
+                    <span class="skill-tag">Alternative Assets</span>
+                    <span class="skill-tag">Investment</span>
+
+                </div>
+                <a class="project-link disabled" aria-disabled="true" tabindex="-1" title="Coming soon — under construction">
+                    Website under construction
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
             </div>
@@ -307,5 +334,6 @@
     <footer>
         <p class="footer-text">© 2025 Linus Lautenschlager. Built with purpose.</p>
     </footer>
+    <!-- Removed JS scroll-restoration: layout now uses sticky nav, so CSS-only prevents overlap -->
 </body>
 </html>

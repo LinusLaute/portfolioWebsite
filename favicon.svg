@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">LL hexagon favicon</title>
+  <!-- hexagon (transparent background), scaled for larger size -->
+  <polygon points="64,12 108,36 108,92 64,116 20,92 20,36" fill="#12104a" />
+  <!-- centered LL, larger font for clarity -->
+  <text x="50%" y="50%" font-family="'Space Mono', 'Segoe UI', Roboto, Arial, sans-serif" font-size="36" fill="#ffffff" font-weight="700" text-anchor="middle" dominant-baseline="central">LL</text>
+</svg>

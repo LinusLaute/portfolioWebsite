@@ -9,6 +9,8 @@
             --accent-glow: rgba(34, 211, 238, 0.15);
             --gradient-1: linear-gradient(135deg, #22d3ee 0%, #818cf8 100%);
             --border: #27272a;
+            /* control nav size so sticky nav takes layout space and avoids overlap */
+            --nav-height: 96px;
         }
 
         * {
@@ -45,12 +47,14 @@
 
         /* Navigation */
         nav {
-            position: fixed;
+            /* use sticky so nav occupies layout space and prevents content overlap without JS */
+            position: sticky;
             top: 0;
             left: 0;
             right: 0;
             z-index: 100;
-            padding: 1.5rem 3rem;
+            height: var(--nav-height);
+            padding: 0 3rem; /* horizontal padding only; vertical centering handled by align-items */
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -60,13 +64,31 @@
         }
 
         .logo {
-            font-family: 'Space Mono', monospace;
-            font-size: 1.25rem;
-            font-weight: 700;
-            background: var(--gradient-1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-img {
+            width: 80px;
+            height: 80px;
+            display: block;
+            transition: width 160ms ease, height 160ms ease;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Accessible visually-hidden helper */
+        .sr-only {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border: 0 !important;
         }
 
         .nav-links {
@@ -212,7 +234,7 @@
             position: relative;
             width: 380px;
             height: 600px;
-            margin-top: 4%;
+            margin-top: 5%;
 
         }
 
@@ -250,7 +272,7 @@
 
         /* Section Styles */
         section {
-            padding: 6rem 3rem;
+            padding: 4rem 3rem;
             max-width: 1400px;
             margin: 0 auto;
         }
@@ -461,6 +483,20 @@
             background: var(--accent);
             border-color: var(--accent);
             color: var(--bg-primary);
+        }
+
+        /* Disabled project link (under construction) */
+        .project-link.disabled {
+            opacity: 0.6;
+            border-color: var(--border);
+            color: var(--text-muted);
+            background: transparent;
+            pointer-events: none;
+            cursor: default;
+        }
+
+        .project-link.disabled svg {
+            opacity: 0.6;
         }
 
         /* Experience Section */
@@ -701,6 +737,8 @@
 
         /* Responsive */
         @media (max-width: 1024px) {
+            :root { --nav-height: 80px; }
+
             .hero-content {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -738,19 +776,52 @@
                 width: 280px;
                 height: 360px;
             }
+
+            /* Logo size for medium screens */
+            .logo-img {
+                width: 64px;
+                height: auto;
+            }
         }
 
         @media (max-width: 768px) {
+            :root { --nav-height: 64px; }
             nav {
-                padding: 1rem 1.5rem;
+                padding: 0 0.5rem;
             }
 
             .nav-links {
                 display: none;
             }
+            .profile-image-container {
+                margin-top: 6%;
+                height: 55vh;
+            }
+
 
             section, .hero {
-                padding: 4rem 1.5rem;
+                padding: 0rem 1.5rem;
+            }
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 1.5rem;
+            }
+            
+            .stat-value {
+                font-size: 1.5rem;
+            }
+            
+            .stat-label {
+                font-size: 0.75rem;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-label {
+                font-size: 0.75rem;
+                letter-spacing: 2px;
             }
 
             .contact-wrapper {
@@ -759,5 +830,11 @@
 
             .contact-links {
                 flex-direction: column;
+            }
+
+            /* Logo size for small screens */
+            .logo-img {
+                width: 44px;
+                height: auto;
             }
         }
