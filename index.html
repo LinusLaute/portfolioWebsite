@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>if ('scrollRestoration' in history) history.scrollRestoration = 'manual';</script>
+
     <title>Linus Lautenschlager | Portfolio</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="256x256">
     <!-- PNG fallback for older browsers (optional): use /favicon.png if you add one -->
@@ -15,11 +18,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W55LRXL35M"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'G-W55LRXL35M');
+        gtag('config', 'G-W55LRXL35M');
     </script>
 </head>
 <body>
@@ -35,9 +38,9 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="de.html" class="lang-switch">DE</a></li>
-
         </ul>
+        <a href="de.html" class="lang-switch">DE</a>
+
     </nav>
 
     <section class="hero">
@@ -82,9 +85,12 @@
         </div>
         <div class="about-content">
             <div class="about-text">
-                <p>I recently completed a Bachelor of Science in Information Systems at the University of Zurich, graduating Magna Cum Laude with a minor in Banking and Finance. My thesis examined agent-based simulation of multi-dimensional token incentive effects, reflecting my interest in the intersection of technology, markets, and quantitative methods.</p>
-                <p>Alongside my studies, I work on small engineering projects that connect software, automation, and digital markets. One example is an arbitrage engine for gaming-asset marketplaces, which I designed and operate as a personal side project. This has given me practical experience with real-time data processing, latency-sensitive systems, and automated decision logic.</p>
-                <p>As a competitive Floorball player and former Scout leader, I bring a structured work ethic, resilience, and a strong team mindset. I enjoy taking ownership, working in fast-learning environments, and delivering solutions end-to-end.</p>
+                <p>I recently completed a Bachelor of Science in Information Systems at the University of Zurich, graduating Magna Cum Laude with a minor in Banking and Finance. 
+                    In my thesis I developed an agent-based simulation of multi-dimensional token incentive effects, reflecting my interest in the intersection of technology, markets, and quantitative methods.</p>
+                <p>I enjoy building practical systems that connect software, automation, and digital markets. My most recent project is an automated arbitrage engine for gaming-asset marketplaces, which I designed, built, and operate. 
+                    Working with real-time data, latency constraints, and automated execution has deepened my experience with system design, reliability, and decision logic in live environments.</p>
+                <p>Outside of work, competitive Floorball and years of leadership experience have shaped how I work and behave under stress: structured, resilient, and team-oriented. 
+                    I value environments where ownership, pace, and clear problem-solving matter, and I’m motivated by challenges where technology and analytical thinking create measurable impact.</p>
             </div>
             <div class="about-details">
                 <div class="detail-item">
@@ -155,32 +161,39 @@
     </section>
 
     <section id="education">
-        <div class="section-header">
-            <div class="section-label">// Education</div>
-            <h2 class="section-title">Academic Background</h2>
+    <div class="section-header">
+        <div class="section-label">// Education</div>
+        <h2 class="section-title">Academic Background</h2>
+    </div>
+    <div class="timeline timeline-edu">
+        <div class="timeline-item">
+            <div class="edu-period">Starting September 2026</div>
+            <div class="edu-degree">M.Sc. Quantitative Finance <span class="edu-badge">Planned</span></div>
+            <div class="edu-school">ETH Zürich × University of Zurich</div>
+            <ul class="timeline-description">
+                <li>Joint program combining mathematical finance, computational methods, and financial economics.</li>
+            </ul>
         </div>
-        <div class="education-grid">
-            <div class="edu-card featured">
-                <div class="edu-period">Starting September 2026</div>
-                <div class="edu-degree">M.Sc. Quantitative Finance</div>
-                <div class="edu-school">ETH Zürich × University of Zurich</div>
-                <div class="edu-details">Joint program combining mathematical finance, computational methods, and financial economics.</div>
-                <div class="edu-badge">Planned</div>
-            </div>
-            <div class="edu-card">
-                <div class="edu-period">Sep 2022 – Jun 2025</div>
-                <div class="edu-degree">B.Sc. Information Systems</div>
-                <div class="edu-school">University of Zurich</div>
-                <div class="edu-details">Magna Cum Laude (5.3/6) · Minor in Banking and Finance · Thesis on agent-based simulation of token incentive effects (5.5/6)</div>
-            </div>
-            <div class="edu-card">
-                <div class="edu-period">Aug 2018 – Jun 2022</div>
-                <div class="edu-degree">Swiss Matura</div>
-                <div class="edu-school">Kantonsschule im Lee</div>
-                <div class="edu-details">Focus on applied mathematics and physics</div>
-            </div>
+        <div class="timeline-item">
+            <div class="edu-period">Sep 2022 – Jun 2025</div>
+            <div class="edu-degree">B.Sc. Information Systems</div>
+            <div class="edu-school">University of Zurich</div>
+            <ul class="timeline-description">
+                <li>Magna Cum Laude (5.3/6)</li>
+                <li>Minor in Banking & Finance</li>
+                <li>Bachelor Thesis: Agent-based simulation of multi-dimensional token incentive effects (5.5/6)</li>
+            </ul>
         </div>
-    </section>
+        <div class="timeline-item">
+            <div class="edu-period">Aug 2018 – Jun 2022</div>
+            <div class="edu-degree">Swiss Matura</div>
+            <div class="edu-school">Kantonsschule im Lee</div>
+            <ul class="timeline-description">
+                <li>Focus on applied mathematics and physics</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
     <section id="skills">
         <div class="section-header">
@@ -332,10 +345,9 @@
             </div>
         </div>
     </section>
-
     <footer>
         <p class="footer-text">© 2025 Linus Lautenschlager. Built with purpose.</p>
     </footer>
-    <!-- Removed JS scroll-restoration: layout now uses sticky nav, so CSS-only prevents overlap -->
 </body>
+
 </html>

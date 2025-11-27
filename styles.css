@@ -125,6 +125,22 @@
             width: 100%;
         }
 
+        .lang-switch {
+            padding: 0.4rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .lang-switch:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
         /* Hero Section */
         .hero-bg {
             /* make the glow span the viewport edge to avoid cutoff at the hero margin */
@@ -272,7 +288,7 @@
 
         /* Section Styles */
         section {
-            padding: 4rem 3rem;
+            padding: 3rem 3rem;
             max-width: 1400px;
             margin: 0 auto;
         }
@@ -588,36 +604,11 @@
             letter-spacing: 0.5px;
         }
 
-        /* Education Section */
-        .education-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .edu-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 2rem;
-            transition: all 0.3s ease;
-        }
-
-        .edu-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-4px);
-        }
-
-        .edu-card.featured {
-            grid-column: span 2;
-            background: linear-gradient(135deg, var(--bg-card) 0%, rgba(34, 211, 238, 0.05) 100%);
-            border-color: rgba(34, 211, 238, 0.3);
-        }
-
+        /* Education*/
         .edu-period {
             font-family: 'Space Mono', monospace;
-            font-size: 0.75rem;
-            color: var(--text-muted);
+            font-size: 0.85rem;
+            color: var(--accent);
             margin-bottom: 0.5rem;
         }
 
@@ -628,29 +619,43 @@
         }
 
         .edu-school {
-            color: var(--accent);
-            font-size: 0.95rem;
+            font-size: 1rem;
+            color: var(--text-muted);
             margin-bottom: 1rem;
         }
 
         .edu-details {
-            font-size: 0.9rem;
             color: var(--text-secondary);
+            font-size: 0.95rem;
             line-height: 1.6;
         }
 
         .edu-badge {
             display: inline-block;
             font-family: 'Space Mono', monospace;
-            font-size: 0.7rem;
-            padding: 0.4rem 0.8rem;
-            background: var(--gradient-1);
-            color: var(--bg-primary);
+            font-size: 0.65rem;
+            padding: 0.3rem 0.6rem;
+            background: #818cf8;
+            color: white;
             border-radius: 4px;
-            margin-top: 1rem;
-            font-weight: 500;
+            margin-left: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
+        /* Education Timeline - Purple Überschreibung */
+        .timeline-edu::before {
+            background: linear-gradient(to bottom, #818cf8, var(--border));
+        }
+
+        .timeline-edu .timeline-item::before {
+            background: #818cf8;
+            box-shadow: 0 0 20px #818cf8;
+        }
+
+        .timeline-edu .edu-period {
+            color: #818cf8;
+}
         /* Contact Section */
         .contact-wrapper {
             background: var(--bg-card);
@@ -785,6 +790,7 @@
         }
 
         @media (max-width: 768px) {
+            
             :root { --nav-height: 64px; }
             nav {
                 padding: 0 0.5rem;
@@ -799,7 +805,7 @@
 
 
             section, .hero {
-                padding: 0rem 1.5rem;
+                padding: 2rem 1.5rem;
             }
             .hero-stats {
                 flex-wrap: wrap;

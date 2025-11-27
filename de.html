@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script>if ('scrollRestoration' in history) history.scrollRestoration = 'manual';</script>
+
     <title>Linus Lautenschlager | Portfolio</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="256x256">
+    <!-- PNG fallback for older browsers (optional): use /favicon.png if you add one -->
+    <!-- <link rel="icon" href="/favicon.png" type="image/png"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -13,47 +18,57 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W55LRXL35M"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-W55LRXL35M');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-W55LRXL35M');
     </script>
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="favicon.svg" alt="LL Logo" class="logo-img">
+            <img src="favicon.svg" alt="LL logo" class="logo-img">
             <span class="sr-only">Linus Lautenschlager</span>
         </div>
         <ul class="nav-links">
             <li><a href="#about">Über mich</a></li>
-            <li><a href="#experience">Erfahrung</a></li>
+            <li><a href="#experience">Berufserfahrung</a></li>
             <li><a href="#education">Ausbildung</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projekte</a></li>
             <li><a href="#contact">Kontakt</a></li>
-            <li><a href="index.html" class="lang-switch">EN</a></li>
         </ul>
+        <a href="index.html" class="lang-switch">EN</a>
+
     </nav>
 
     <section class="hero">
         <div class="hero-bg"></div>
         <div class="hero-content">
             <div class="hero-text">
-                <div class="hero-label">Software Engineer, Tech & Finance Enthusiast</div>
-                <h1 class="hero-title">Hallo, ich bin <span>Linus Lautenschlager</span></h1>
-                <p class="hero-description">Ich entwickle Projekte an der Schnittstelle von Software Engineering und Finance. Wohnhaft in Winterthur, Schweiz.</p>
+                <div class="hero-label">Software Engineer, Tech & Finance Enthusiast
+                </div>
+                <h1 class="hero-title">Hallo, ich bin  <span>Linus Lautenschlager</span></h1>
+                <p class="hero-description">Ich entwerfe und entwickle Softwarelösungen an der Schnittstelle von Finance und Technologie. Based in Winterthur, Schweiz</p>
                 
                 <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-value">2025</div>
-                        <div class="stat-label">BSc Wirtschaftsnformatik UZH</div>
+                        <div class="stat">
+                            <div class="stat-value">2025</div>
+                            <div class="stat-label">BSc Wirtschaftsinformatik UZH</div>
                     </div>
                     <div class="stat">
                         <div class="stat-value">5.3</div>
-                        <div class="stat-label">Abschlussnote (Magna Cum Laude)</div>
+                        <div class="stat-label">Abschluss (Magna Cum Laude)</div>
+                    </div>
+                    
+                    <div class="stat">
+                        <div class="stat-value">10+ Jahre</div>
+                        <div class="stat-label">Leistungssport</div>
                     </div>
                 </div>
+            
+
             </div>
             <div class="hero-image">
                 <div class="profile-image-container">
@@ -70,9 +85,18 @@
         </div>
         <div class="about-content">
             <div class="about-text">
-                <p>Ich habe kürzlich meinen Bachelor of Science in Wirtschaftsinformatik an der Universität Zürich abgeschlossen – Magna Cum Laude mit Nebenfach Banking and Finance. In meiner Bachelorarbeit eintwickelte ich eine agentenbasierte Simulation von multidimensionalen Token-Incentive-Effekten, was mein Interesse an der Schnittstelle von Technologie, Märkten und quantitativen Methoden widerspiegelt.</p>
-                <p>Neben dem Studium arbeite ich an kleineren Engineering-Projekten, die Software, Automatisierung und digitale Märkte verbinden. Ein Beispiel ist eine Arbitrage-Engine für Gaming-Asset-Marktplätze, die ich als persönliches Nebenprojekt entwickelt habe und betreibe. Dabei habe ich praktische Erfahrung mit Echtzeit-Datenverarbeitung, latenzempfindlichen Systemen und automatisierter Entscheidungslogik gesammelt.</p>
-                <p>Als aktiver Unihockey-Spieler und ehemaliger Pfadileiter bringe ich eine strukturierte Arbeitsweise, Belastbarkeit und starken Teamgeist mit. Ich übernehme gerne Verantwortung, arbeite in schnelllebigen Umgebungen und liefere Lösungen von Anfang bis Ende.</p>
+                <p>
+                    Ich habe kürzlich meinen Bachelor of Science in Wirtschaftsinformatik an der Universität Zürich mit Magna Cum Laude abgeschlossen, mit Nebenfach Banking & Finance.
+                    In meiner Bachelorarbeit entwickelte ich ein agentenbasiertes Simulationsmodell zu mehrdimensionalen Token-Anreizmechanismen, was mein Interesse an Technologie, Finanzmärkte und quantitativen Methoden widerspiegelt.
+                </p>
+                <p>
+                    Ich arbeite gerne an praktischen Systemen, die Software, Automatisierung und digitale Märkte verbinden. Mein aktuellstes Projekt ist eine automatisierte Arbitrage-Engine für digitale Gaming-Assets, die ich vollständig selbst konzipiert, implementiert und betreibe. 
+                    Die Arbeit mit Echtzeitdaten, Latenzanforderungen und automatisierten Entscheidungen hat mein Verständnis für Systemdesign, Robustheit und verlässliche Logik in produktiven Umgebungen vertieft.
+                </p>
+                <p>
+                    Neben dem Technischen prägen mich der Leistungssport im Unihockey und mehrere Jahre Führungserfahrung. 
+                    Unter Druck bleibe ich strukturiert, belastbar und teamorientiert. Ich schätze ein Umfeld, in dem Ownership, Tempo und klare Problemlösung gefragt sind und in dem Technologie und analytisches Denken einen messbaren Mehrwert schaffen.
+                </p>
             </div>
             <div class="about-details">
                 <div class="detail-item">
@@ -95,74 +119,91 @@
         </div>
     </section>
 
-    <section id="experience">
+     <section id="experience">
         <div class="section-header">
-            <div class="section-label">// Erfahrung</div>
+            <div class="section-label">// Berufserfahrung</div>
             <h2 class="section-title">Beruflicher Werdegang</h2>
         </div>
         <div class="timeline">
             <div class="timeline-item">
-                <div class="timeline-date">Jun 2025 – Okt 2025</div>
+                <div class="timeline-date">Jun 2025 – Oct 2025</div>
                 <h3 class="timeline-title">Übermittlungssoldat</h3>
                 <div class="timeline-company">Schweizer Armee</div>
                 <ul class="timeline-description">
-                    <li>Militärdienst im Bereich Übermittlung und Kommunikation</li>
+                    <li>Rekrutenschule als Übermittlungssoldat in Frauenfeld</li>
                 </ul>
             </div>
             <div class="timeline-item">
                 <div class="timeline-date">Jun 2024 – Jun 2025</div>
-                <h3 class="timeline-title">Software Engineering Praktikant</h3>
+                <h3 class="timeline-title">Software Engineering Praktikum</h3>
                 <div class="timeline-company">Swica Winterthur · CIO Office</div>
                 <ul class="timeline-description">
-                    <li>Entwicklung interner Web-Tools zur Automatisierung von Geschäftsregelvalidierung und Datenverarbeitung</li>
+                    <li>Entwicklung interner Web-Tools zur Automatisierung und Validierung von Geschäftsregeln in der Datenverarbeitung</li>
                     <li>Umsetzung von Stakeholder-Anforderungen in skalierbare Azure-basierte Lösungen</li>
-                    <li>Verbesserung der Zuverlässigkeit von Kernintegrationen durch Refactoring von MuleSoft-Schnittstellen</li>
-                    <li>End-to-End-Verantwortung von Design über Implementierung, Testing bis zur Übergabe</li>
+                    <li>Verbesserung von Integrationen ins Kernsystem durch Überarbeitung von System-Endpunkten</li>
+                    <li>Gesamter Lebenszyklus vom Entwurf über die Implementierung und das Testen bis hin zur Übergabe einer Applikation</li>
                 </ul>
             </div>
             <div class="timeline-item">
                 <div class="timeline-date">Jun 2023 – Jun 2024</div>
-                <h3 class="timeline-title">Hauptkursleiter</h3>
+                <h3 class="timeline-title">Head Teacher</h3>
                 <div class="timeline-company">CodeCamp Switzerland</div>
                 <ul class="timeline-description">
-                    <li>Durchführung von Java-Programmierkursen für bis zu 25 Teilnehmende</li>
-                    <li>Koordination eines Teams von bis zu fünf Hilfslehrpersonen</li>
+                    <li>Durchführung von Java-Programmierkursen für bis zu 25 Teilnehmer</li>
+                    <li>Führung eines Teams von bis zu fünf Assistenzlehrern</li>
                 </ul>
             </div>
+            <!-- <div class="timeline-item">
+                <div class="timeline-date">2024 – Present</div>
+                <h3 class="timeline-title">Founder</h3>
+                <div class="timeline-company">Luti Capital</div>
+                <ul class="timeline-description">
+                    <li>Building alternative investment strategies in gaming cosmetics markets since 2019</li>
+                    <li>Developing data-driven tools for market analysis and automation</li>
+                    <li>Developed and expanded arbitrage algorithm since 2022</li>
+                </ul>
+            </div> -->
         </div>
     </section>
 
     <section id="education">
-        <div class="section-header">
-            <div class="section-label">// Ausbildung</div>
-            <h2 class="section-title">Akademischer Hintergrund</h2>
+    <div class="section-header">
+        <div class="section-label">// Ausbildung</div>
+        <h2 class="section-title">Akademischer Werdegang</h2>
+    </div>
+    <div class="timeline timeline-edu">
+        <div class="timeline-item">
+            <div class="edu-period">Start September 2026</div>
+            <div class="edu-degree">M.Sc. Quantitative Finance <span class="edu-badge">Gelpant</span></div>
+            <div class="edu-school">ETH Zürich × University of Zurich</div>
+            <ul class="timeline-description">
+                <li>Joint Master welcher Finanzmathematik, Bewertungsmethoden und Finanzökonomie vereint</li>
+            </ul>
         </div>
-        <div class="education-grid">
-            <div class="edu-card featured">
-                <div class="edu-period">Ab September 2026</div>
-                <div class="edu-degree">M.Sc. Quantitative Finance</div>
-                <div class="edu-school">ETH Zürich × Universität Zürich</div>
-                <div class="edu-details">Gemeinsamer Studiengang mit Fokus auf mathematische Finanzwirtschaft, numerische Methoden und Finanzökonomie.</div>
-                <div class="edu-badge">Geplant</div>
-            </div>
-            <div class="edu-card">
-                <div class="edu-period">Sep 2022 – Jun 2025</div>
-                <div class="edu-degree">B.Sc. Wirtschaftsinformatik</div>
-                <div class="edu-school">Universität Zürich</div>
-                <div class="edu-details">Magna Cum Laude (5.3/6) · Nebenfach Banking and Finance · Bachelorarbeit über agentenbasierte Simulation von Token-Incentive-Effekten (5.5/6)</div>
-            </div>
-            <div class="edu-card">
-                <div class="edu-period">Aug 2018 – Jun 2022</div>
-                <div class="edu-degree">Matura</div>
-                <div class="edu-school">Kantonsschule im Lee</div>
-                <div class="edu-details">Schwerpunkt Angewandte Mathematik und Physik</div>
-            </div>
+        <div class="timeline-item">
+            <div class="edu-period">Sep 2022 – Jun 2025</div>
+            <div class="edu-degree">B.Sc. Wirtschaftsinformatik</div>
+            <div class="edu-school">Universität Zurich</div>
+            <ul class="timeline-description">
+                <li>Magna Cum Laude (5.3/6)</li>
+                <li>Minor in Banking & Finance</li>
+                <li>Bachelorarbeit: Agent-based simulation of multi-dimensional token incentive effects (5.5/6)</li>
+            </ul>
         </div>
-    </section>
+        <div class="timeline-item">
+            <div class="edu-period">Aug 2018 – Jun 2022</div>
+            <div class="edu-degree">Eidgenössische Maturität</div>
+            <div class="edu-school">Kantonsschule im Lee</div>
+            <ul class="timeline-description">
+                <li>Schwerpunkt angewandte Mathematik und Physik</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
     <section id="skills">
         <div class="section-header">
-            <div class="section-label">// Technische Skills</div>
+            <div class="section-label">// Teschnische Skills</div>
             <h2 class="section-title">Womit ich arbeite</h2>
         </div>
         <div class="skills-grid">
@@ -170,7 +211,7 @@
                 <div class="skill-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
                 </div>
-                <h3 class="skill-title">Sprachen</h3>
+                <h3 class="skill-title">Programmiersprachen</h3>
                 <div class="skill-items">
                     <span class="skill-tag">Python</span>
                     <span class="skill-tag">Java</span>
@@ -222,31 +263,37 @@
     <section id="projects">
         <div class="section-header">
             <div class="section-label">// Projekte</div>
-            <h2 class="section-title">Ausgewählte Arbeiten</h2>
+            <h2 class="section-title">Ausgewählte Projekte</h2>
         </div>
         <div class="projects-grid">
+            
             <div class="project-card">
                 <div class="project-header">
-                    <div class="project-type">Trading · Automatisierung</div>
+                    <div class="project-type">Trading · Automation</div>
                     <h3 class="project-title">Arbitrage Bot</h3>
-                    <p class="project-description">Ein Python-basiertes System, das Preisunterschiede zwischen europäischen und asiatischen digitalen Skin-Märkten erkennt und nutzt. Es automatisiert den gesamten Prozess von der Identifikation von Chancen über den Kauf bis hin zum Wiederverkauf und Performance-Tracking.</p>
+                    <p class="project-description">Eigenständig entwickelter Python-Bot zur Arbitrage zwischen europäischen und asiatischen 
+Märkten mit Fokus auf latenzoptimierte Implementierung, Automatisierung, Marktanalyse und 
+Profitabilität.
+                    </p>
                 </div>
                 <div class="project-tech">
                     <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Echtzeit-Verarbeitung</span>
-                    <span class="skill-tag">Risikomanagement</span>
-                    <span class="skill-tag">Automatisierung</span>
+                    <span class="skill-tag">Real-time Processing</span>
+                    <span class="skill-tag">Risk Management</span>
+                    <span class="skill-tag">Automation</span>
                 </div>
                 <a href="https://github.com/LinusLaute" target="_blank" rel="noopener" class="project-link">
-                    Auf GitHub ansehen
+                    View on GitHub
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
             </div>
             <div class="project-card">
                 <div class="project-header">
-                    <div class="project-type">Universität · Teamprojekt</div>
-                    <h3 class="project-title">Poker Web-Applikation</h3>
-                    <p class="project-description">Full-Stack Multiplayer-Poker-Plattform, entwickelt als Gruppenprojekt an der Universität mit einem Team von fünf Personen. Backend-Spiellogik und API in Java, React-Frontend für Echtzeit-Gameplay. Gehostet auf Google Cloud Infrastruktur.</p>
+                    <div class="project-type">University · Team Project</div>
+                    <h3 class="project-title">Poker Web Application</h3>
+                    <p class="project-description">Full-stack multiplayer poker platform built as a university group project with a team of five. 
+                        Entwicklung einer Online-Pokerapp als Universitätsprojekt in einer Gruppe von fünf Studenten. Das Backend und die SPiellogik wurde in Java, das Frontend in React entwickelt. Deployed wurde auf Google Cloud.
+                    </p>
                 </div>
                 <div class="project-tech">
                     <span class="skill-tag">Java</span>
@@ -255,38 +302,43 @@
                     <span class="skill-tag">WebSockets</span>
                 </div>
                 <a href="https://github.com/LinusLaute" target="_blank" rel="noopener" class="project-link">
-                    Auf GitHub ansehen
+                    View on GitHub
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
             </div>
+
             <div class="project-card">
                 <div class="project-header">
-                    <div class="project-type">Nebenprojekt · Seit 2019</div>
+                    <div class="project-type">Side Project · Since 2019</div>
                     <h3 class="project-title">Luti Capital</h3>
-                    <p class="project-description">Luti Capital ist ein persönliches Projekt mit Fokus auf das Erkennen und Nutzen von Preisineffizienzen in alternativen digitalen Asset-Märkten. Der Hauptbereich sind Gaming-Kosmetika, insbesondere Counter-Strike Items, unterstützt durch manuelle Analyse und einen automatisierten Arbitrage-Bot, den ich seit 2022 entwickle.</p>
+                    <p class="project-description">Luti Capital ist ein persönliches Projekt, das sich darauf konzentriert, Preisineffizienzen in alternativen Märkten für digitale Vermögenswerte zu identifizieren und davon zu profitieren. 
+Der Schwerpunkt liegt auf Gaming-Kosmetikartikeln, insbesondere Gegenständen aus Counter-Strike, unterstützt durch manuelle Analysen und einen automatisierten Arbitrage-Bot, den ich seit 2022 entwickle.
+                    </p>
                 </div>
                 <div class="project-tech">
                     <span class="skill-tag">Next.js</span>
-                    <span class="skill-tag">Marktanalyse</span>
+                    <span class="skill-tag">Market Analysis</span>
                     <span class="skill-tag">Alternative Assets</span>
                     <span class="skill-tag">Investment</span>
+
                 </div>
-                <a class="project-link disabled" aria-disabled="true" tabindex="-1" title="Demnächst verfügbar">
-                    Website im Aufbau
+                <a class="project-link disabled" aria-disabled="true" tabindex="-1" title="Coming soon — under construction">
+                    Website under construction
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
             </div>
         </div>
     </section>
 
+
     <section id="contact">
         <div class="contact-wrapper">
-            <h2 class="contact-title">Lass uns connecten</h2>
-            <p class="contact-subtitle">Offen für Möglichkeiten in Software Engineering, Fintech, quantitativer Entwicklung oder allem an der Schnittstelle von Code und Finance.</p>
+            <h2 class="contact-title">Let's Connect</h2>
+            <p class="contact-subtitle">Open for opportunities in software engineering, fintech, quantitative development, or anything at the intersection of code and finance.</p>
             <div class="contact-links">
                 <a href="mailto:lautenschlagerlinus@gmail.com" class="contact-link">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    E-Mail
+                    Email
                 </a>
                 <a href="https://www.linkedin.com/in/linus-lautenschlager-567605220/" target="_blank" rel="noopener" class="contact-link">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
@@ -299,9 +351,9 @@
             </div>
         </div>
     </section>
-
     <footer>
-        <p class="footer-text">© 2025 Linus Lautenschlager. Mit Absicht gebaut.</p>
+        <p class="footer-text">© 2025 Linus Lautenschlager. Built with purpose.</p>
     </footer>
 </body>
+
 </html>
