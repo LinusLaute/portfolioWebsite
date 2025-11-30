@@ -727,6 +727,12 @@
             height: 20px;
         }
 
+        .qrcode img {
+            filter: invert(1);
+            width: 180px;
+
+        }
+
         /* Footer */
         footer {
             padding: 2rem 3rem;
