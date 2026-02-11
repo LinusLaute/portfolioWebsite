@@ -609,21 +609,8 @@
             opacity: 0.85;
         }
 
-        .timeline-future::before {
-            background: transparent;
-            border: 2px solid var(--accent);
-            box-shadow: none;
-        }
-
         .timeline-future .timeline-date {
             color: var(--text-muted);
-        }
-
-        .timeline-future .timeline-title {
-            background: var(--gradient-1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
 
         /* Education*/
