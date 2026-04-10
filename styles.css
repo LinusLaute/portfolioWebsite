@@ -602,6 +602,15 @@
             letter-spacing: 0.5px;
         }
 
+        /* Future Timeline Item */
+        .timeline-future {
+            opacity: 0.85;
+        }
+
+        .timeline-future .timeline-date {
+            color: var(--text-muted);
+        }
+
         /* Education*/
         .edu-period {
             font-family: 'Space Mono', monospace;
@@ -859,3 +868,4 @@
                 height: auto;
             }
         }
+

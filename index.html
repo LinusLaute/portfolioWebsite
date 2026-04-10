@@ -7,36 +7,62 @@
     <script>if ('scrollRestoration' in history) history.scrollRestoration = 'manual';</script>
 
     <title>Linus Lautenschlager | Portfolio</title>
-    <!-- Beschreibung für Suchergebnisse (150-160 Zeichen optimal) -->
     <meta name="description" content="Building solutions at the intersection of software engineering, finance, and digital markets. BSc Information Systems.">
     <meta name="keywords" content="Linus Lautenschlager, Software Engineer, Winterthur, Zürich, Wirtschaftsinformatik, UZH, Fintech, Quantitative Finance">
     <meta name="author" content="Linus Lautenschlager">
 
-     <!-- Open Graph (für LinkedIn, Social Sharing) -->
+    <link rel="canonical" href="https://llautenschlager.me/">
+
+    <link rel="alternate" hreflang="en" href="https://llautenschlager.me/">
+    <link rel="alternate" hreflang="de" href="https://llautenschlager.me/de.html">
+    <link rel="alternate" hreflang="x-default" href="https://llautenschlager.me/">
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Linus Lautenschlager | Software Engineer">
     <meta property="og:description" content="Software Engineer in Winterthur, Switzerland. Specialised on the intersection of code and finance.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://linuslautenschlager.com/">
-    <meta property="og:image" content="https://linuslautenschlager.com/profile.jpg">
+    <meta property="og:url" content="https://llautenschlager.me/">
+    <meta property="og:image" content="https://llautenschlager.me/resources/profile.jpg">
 
+    <!-- Bing Verification -->
     <meta name="msvalidate.01" content="C3615C8698E068CB58B0A35C20DD9D0A" />
 
-<!-- Favicon wird automatisch von deinem bestehenden Tag genommen -->
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="256x256">
-    <!-- PNG fallback for older browsers (optional): use /favicon.png if you add one -->
-    <!-- <link rel="icon" href="/favicon.png" type="image/png"> -->
+    <!-- Favicon -->
+    <link rel="icon" href="resources/favicon.ico" sizes="48x48">
+
+    <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Linus Lautenschlager",
+      "url": "https://llautenschlager.me",
+      "image": "https://llautenschlager.me/resources/profile.jpg",
+      "jobTitle": "Software Engineer",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Zurich"
+      },
+      "knowsAbout": ["Software Engineering", "Python", "Java", "Fintech", "Automation"],
+      "sameAs": [
+        "https://www.linkedin.com/in/linus-lautenschlager-567605220/",
+        "https://github.com/LinusLaute"
+      ]
+    }
+    </script>
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W55LRXL35M"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-W55LRXL35M');
     </script>
 </head>
@@ -50,8 +76,8 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <a href="de.html" class="lang-switch">DE</a>
@@ -144,6 +170,15 @@
             <h2 class="section-title">Professional Journey</h2>
         </div>
         <div class="timeline">
+            <div class="timeline-item timeline-future">
+                <div class="timeline-date">Mar 2026 – Aug 2026 <span class="timeline-badge">Upcoming</span></div>
+                <h3 class="timeline-title">Technology Consulting Intern</h3>
+                <div class="timeline-company">Ernst & Young (EY)</div>
+                <ul class="timeline-description">
+                    <li>Building internal tooling to support modular enterprise transformation workflows</li>
+                    <li>Focus on software engineering within large-scale digital transformation projects</li>
+                </ul>
+            </div>
             <div class="timeline-item">
                 <div class="timeline-date">Mar 2026 – Aug 2026</div>
                 <h3 class="timeline-title">Technology Consulting Intern</h3>
@@ -164,7 +199,7 @@
             <div class="timeline-item">
                 <div class="timeline-date">Jun 2024 – Jun 2025</div>
                 <h3 class="timeline-title">Software Engineering Intern</h3>
-                <div class="timeline-company">Swica Winterthur · CIO Office</div>
+                <div class="timeline-company">Swica Winterthur</div>
                 <ul class="timeline-description">
                     <li>Built internal web tools to automate business rule validation and data processing</li>
                     <li>Translated stakeholder requirements into scalable Azure-based solutions</li>
